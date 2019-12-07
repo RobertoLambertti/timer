@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.timer-border {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    color: #9a0fe0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #9a0fe0;
+  position: relative;
+  /* width: 268px;
+  height: 268px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle svg {
+  width: 268px;
+  height: 268px;
+}
+
+.circle .bg {
+  fill: none;
+  stroke-width: 60px;
+  stroke: #343035;
+}
+
+.circle .progress {
+  fill: none;
+  stroke-width: 60px;
+  stroke: #9a0fe0;
+  /* stroke-linecap: round; */
+  stroke-dasharray: 653.13;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: 1000ms linear;
+}
+
+.circle .text {
+  position: absolute;
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+}
